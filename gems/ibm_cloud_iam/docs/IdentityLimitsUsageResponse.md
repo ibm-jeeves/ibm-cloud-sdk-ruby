@@ -15,9 +15,9 @@
 | **claim_rules_per_group** | [**IdentityLimitsUsageResponseClaimRulesPerGroup**](IdentityLimitsUsageResponseClaimRulesPerGroup.md) |  | [optional] |
 | **claim_rules_per_profile** | [**IdentityLimitsUsageResponseClaimRulesPerProfile**](IdentityLimitsUsageResponseClaimRulesPerProfile.md) |  | [optional] |
 | **cr_links** | [**LimitCount**](LimitCount.md) |  | [optional] |
-| **cr_links_per_profile** | [**IdentityLimitsUsageResponseClaimRulesPerProfile**](IdentityLimitsUsageResponseClaimRulesPerProfile.md) |  | [optional] |
+| **cr_links_per_profile** | [**IdentityLimitsUsageResponseCrLinksPerProfile**](IdentityLimitsUsageResponseCrLinksPerProfile.md) |  | [optional] |
 | **cr_rules** | [**LimitCount**](LimitCount.md) |  | [optional] |
-| **cr_rules_per_profile** | [**IdentityLimitsUsageResponseClaimRulesPerProfile**](IdentityLimitsUsageResponseClaimRulesPerProfile.md) |  | [optional] |
+| **cr_rules_per_profile** | [**IdentityLimitsUsageResponseCrRulesPerProfile**](IdentityLimitsUsageResponseCrRulesPerProfile.md) |  | [optional] |
 
 ## Example
 

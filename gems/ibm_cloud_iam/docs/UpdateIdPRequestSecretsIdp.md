@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **signing** | [**Array&lt;CreateIdpRequestSecretsIdpSigningInner&gt;**](CreateIdpRequestSecretsIdpSigningInner.md) | IDP signing certificates | [optional] |
-| **encrypting** | [**Array&lt;CreateIdpRequestSecretsIdpSigningInner&gt;**](CreateIdpRequestSecretsIdpSigningInner.md) | IDP encrypting certificates | [optional] |
+| **encrypting** | [**Array&lt;CreateIdpRequestSecretsIdpEncryptingInner&gt;**](CreateIdpRequestSecretsIdpEncryptingInner.md) | IDP encrypting certificates | [optional] |
 
 ## Example
 

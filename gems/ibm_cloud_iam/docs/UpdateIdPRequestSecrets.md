@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **idp** | [**UpdateIdPRequestSecretsIdp**](UpdateIdPRequestSecretsIdp.md) |  | [optional] |
-| **sp** | [**CreateIdpRequestSecretsSp**](CreateIdpRequestSecretsSp.md) |  | [optional] |
+| **sp** | [**UpdateIdPRequestSecretsSp**](UpdateIdPRequestSecretsSp.md) |  | [optional] |
 
 ## Example
 
