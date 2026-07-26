@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **cores** | [**HostCapacityCores**](HostCapacityCores.md) |  | [optional] |
-| **memory** | [**HostCapacityCores**](HostCapacityCores.md) |  | [optional] |
+| **memory** | [**HostCapacityMemory**](HostCapacityMemory.md) |  | [optional] |
 
 ## Example
 
