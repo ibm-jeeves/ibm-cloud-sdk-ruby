@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **asynchronous_replication** | [**DisasterRecoveryAsynchronousReplication**](DisasterRecoveryAsynchronousReplication.md) |  |  |
-| **synchronous_replication** | [**DisasterRecoveryAsynchronousReplication**](DisasterRecoveryAsynchronousReplication.md) |  | [optional] |
+| **synchronous_replication** | [**DisasterRecoverySynchronousReplication**](DisasterRecoverySynchronousReplication.md) |  | [optional] |
 
 ## Example
 

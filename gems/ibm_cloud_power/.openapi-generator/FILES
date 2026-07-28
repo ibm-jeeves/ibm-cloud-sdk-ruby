@@ -13,6 +13,7 @@ docs/AuxiliaryVolumesForOnboardingAuxiliaryVolumesInner.md
 docs/AvailableHost.md
 docs/AvailableHostCapacity.md
 docs/AvailableHostCapacityCores.md
+docs/AvailableHostCapacityMemory.md
 docs/AvailableHostResourceCapacity.md
 docs/CapabilitiesDetails.md
 docs/CapabilitiesDetailsDisasterRecovery.md
@@ -58,6 +59,7 @@ docs/DisasterRecovery.md
 docs/DisasterRecoveryAsynchronousReplication.md
 docs/DisasterRecoveryLocation.md
 docs/DisasterRecoveryLocations.md
+docs/DisasterRecoverySynchronousReplication.md
 docs/Error.md
 docs/Event.md
 docs/EventUser.md
@@ -69,6 +71,7 @@ docs/GetServerVirtualSerialNumber.md
 docs/Host.md
 docs/HostCapacity.md
 docs/HostCapacityCores.md
+docs/HostCapacityMemory.md
 docs/HostCreate.md
 docs/HostGroup.md
 docs/HostGroupCreate.md
@@ -295,6 +298,9 @@ docs/SupportedSystems.md
 docs/System.md
 docs/SystemPool.md
 docs/SystemPoolCapacity.md
+docs/SystemPoolMaxAvailable.md
+docs/SystemPoolMaxCoresAvailable.md
+docs/SystemPoolMaxMemoryAvailable.md
 docs/SystemPoolSharedCoreRatio.md
 docs/SystemResources.md
 docs/TargetTrustedProfile.md
@@ -426,6 +432,7 @@ lib/ibm_cloud_power/models/auxiliary_volumes_for_onboarding_auxiliary_volumes_in
 lib/ibm_cloud_power/models/available_host.rb
 lib/ibm_cloud_power/models/available_host_capacity.rb
 lib/ibm_cloud_power/models/available_host_capacity_cores.rb
+lib/ibm_cloud_power/models/available_host_capacity_memory.rb
 lib/ibm_cloud_power/models/available_host_resource_capacity.rb
 lib/ibm_cloud_power/models/capabilities_details.rb
 lib/ibm_cloud_power/models/capabilities_details_disaster_recovery.rb
@@ -470,6 +477,7 @@ lib/ibm_cloud_power/models/disaster_recovery.rb
 lib/ibm_cloud_power/models/disaster_recovery_asynchronous_replication.rb
 lib/ibm_cloud_power/models/disaster_recovery_location.rb
 lib/ibm_cloud_power/models/disaster_recovery_locations.rb
+lib/ibm_cloud_power/models/disaster_recovery_synchronous_replication.rb
 lib/ibm_cloud_power/models/error.rb
 lib/ibm_cloud_power/models/event.rb
 lib/ibm_cloud_power/models/event_user.rb
@@ -481,6 +489,7 @@ lib/ibm_cloud_power/models/get_server_virtual_serial_number.rb
 lib/ibm_cloud_power/models/host.rb
 lib/ibm_cloud_power/models/host_capacity.rb
 lib/ibm_cloud_power/models/host_capacity_cores.rb
+lib/ibm_cloud_power/models/host_capacity_memory.rb
 lib/ibm_cloud_power/models/host_create.rb
 lib/ibm_cloud_power/models/host_group.rb
 lib/ibm_cloud_power/models/host_group_create.rb
@@ -673,6 +682,9 @@ lib/ibm_cloud_power/models/supported_systems.rb
 lib/ibm_cloud_power/models/system.rb
 lib/ibm_cloud_power/models/system_pool.rb
 lib/ibm_cloud_power/models/system_pool_capacity.rb
+lib/ibm_cloud_power/models/system_pool_max_available.rb
+lib/ibm_cloud_power/models/system_pool_max_cores_available.rb
+lib/ibm_cloud_power/models/system_pool_max_memory_available.rb
 lib/ibm_cloud_power/models/system_pool_shared_core_ratio.rb
 lib/ibm_cloud_power/models/system_resources.rb
 lib/ibm_cloud_power/models/target_trusted_profile.rb
@@ -795,6 +807,7 @@ spec/models/auxiliary_volume_for_onboarding_spec.rb
 spec/models/auxiliary_volumes_for_onboarding_auxiliary_volumes_inner_spec.rb
 spec/models/auxiliary_volumes_for_onboarding_spec.rb
 spec/models/available_host_capacity_cores_spec.rb
+spec/models/available_host_capacity_memory_spec.rb
 spec/models/available_host_capacity_spec.rb
 spec/models/available_host_resource_capacity_spec.rb
 spec/models/available_host_spec.rb
@@ -841,6 +854,7 @@ spec/models/disaster_recovery_asynchronous_replication_spec.rb
 spec/models/disaster_recovery_location_spec.rb
 spec/models/disaster_recovery_locations_spec.rb
 spec/models/disaster_recovery_spec.rb
+spec/models/disaster_recovery_synchronous_replication_spec.rb
 spec/models/error_spec.rb
 spec/models/event_spec.rb
 spec/models/event_user_spec.rb
@@ -850,6 +864,7 @@ spec/models/flash_copy_mapping_spec.rb
 spec/models/get_bulk_volume_spec.rb
 spec/models/get_server_virtual_serial_number_spec.rb
 spec/models/host_capacity_cores_spec.rb
+spec/models/host_capacity_memory_spec.rb
 spec/models/host_capacity_spec.rb
 spec/models/host_create_spec.rb
 spec/models/host_group_create_spec.rb
@@ -1042,6 +1057,9 @@ spec/models/storage_types_capacity_spec.rb
 spec/models/supported_software_tier_spec.rb
 spec/models/supported_systems_spec.rb
 spec/models/system_pool_capacity_spec.rb
+spec/models/system_pool_max_available_spec.rb
+spec/models/system_pool_max_cores_available_spec.rb
+spec/models/system_pool_max_memory_available_spec.rb
 spec/models/system_pool_shared_core_ratio_spec.rb
 spec/models/system_pool_spec.rb
 spec/models/system_resources_spec.rb
