@@ -48,6 +48,7 @@ docs/CreateIdpRequestPropertiesSp.md
 docs/CreateIdpRequestPropertiesSpAuthnContext.md
 docs/CreateIdpRequestSecrets.md
 docs/CreateIdpRequestSecretsIdp.md
+docs/CreateIdpRequestSecretsIdpEncryptingInner.md
 docs/CreateIdpRequestSecretsIdpSigningInner.md
 docs/CreateIdpRequestSecretsSp.md
 docs/CreateIdpRequestSecretsSpSigningInner.md
@@ -71,6 +72,8 @@ docs/IdentityLimitsUsageResponse.md
 docs/IdentityLimitsUsageResponseApikeysPerIdentity.md
 docs/IdentityLimitsUsageResponseClaimRulesPerGroup.md
 docs/IdentityLimitsUsageResponseClaimRulesPerProfile.md
+docs/IdentityLimitsUsageResponseCrLinksPerProfile.md
+docs/IdentityLimitsUsageResponseCrRulesPerProfile.md
 docs/IdentityLimitsUsageResponseServiceidsPerGroup.md
 docs/IdentityLimitsUsageResponseTemplateVersionsPerTemplate.md
 docs/IdentityPreferenceResponse.md
@@ -143,8 +146,11 @@ docs/UpdateApiKeyRequest.md
 docs/UpdateIdPRequest.md
 docs/UpdateIdPRequestProperties.md
 docs/UpdateIdPRequestPropertiesIdp.md
+docs/UpdateIdPRequestPropertiesSp.md
+docs/UpdateIdPRequestPropertiesSpAuthnContext.md
 docs/UpdateIdPRequestSecrets.md
 docs/UpdateIdPRequestSecretsIdp.md
+docs/UpdateIdPRequestSecretsSp.md
 docs/UpdatePreferenceRequest.md
 docs/UpdateServiceIdGroupRequest.md
 docs/UpdateServiceIdRequest.md
@@ -217,6 +223,7 @@ lib/ibm_cloud_iam/models/create_idp_request_properties_sp.rb
 lib/ibm_cloud_iam/models/create_idp_request_properties_sp_authn_context.rb
 lib/ibm_cloud_iam/models/create_idp_request_secrets.rb
 lib/ibm_cloud_iam/models/create_idp_request_secrets_idp.rb
+lib/ibm_cloud_iam/models/create_idp_request_secrets_idp_encrypting_inner.rb
 lib/ibm_cloud_iam/models/create_idp_request_secrets_idp_signing_inner.rb
 lib/ibm_cloud_iam/models/create_idp_request_secrets_sp.rb
 lib/ibm_cloud_iam/models/create_idp_request_secrets_sp_signing_inner.rb
@@ -239,6 +246,8 @@ lib/ibm_cloud_iam/models/identity_limits_usage_response.rb
 lib/ibm_cloud_iam/models/identity_limits_usage_response_apikeys_per_identity.rb
 lib/ibm_cloud_iam/models/identity_limits_usage_response_claim_rules_per_group.rb
 lib/ibm_cloud_iam/models/identity_limits_usage_response_claim_rules_per_profile.rb
+lib/ibm_cloud_iam/models/identity_limits_usage_response_cr_links_per_profile.rb
+lib/ibm_cloud_iam/models/identity_limits_usage_response_cr_rules_per_profile.rb
 lib/ibm_cloud_iam/models/identity_limits_usage_response_serviceids_per_group.rb
 lib/ibm_cloud_iam/models/identity_limits_usage_response_template_versions_per_template.rb
 lib/ibm_cloud_iam/models/identity_preference_response.rb
@@ -303,8 +312,11 @@ lib/ibm_cloud_iam/models/update_api_key_request.rb
 lib/ibm_cloud_iam/models/update_id_p_request.rb
 lib/ibm_cloud_iam/models/update_id_p_request_properties.rb
 lib/ibm_cloud_iam/models/update_id_p_request_properties_idp.rb
+lib/ibm_cloud_iam/models/update_id_p_request_properties_sp.rb
+lib/ibm_cloud_iam/models/update_id_p_request_properties_sp_authn_context.rb
 lib/ibm_cloud_iam/models/update_id_p_request_secrets.rb
 lib/ibm_cloud_iam/models/update_id_p_request_secrets_idp.rb
+lib/ibm_cloud_iam/models/update_id_p_request_secrets_sp.rb
 lib/ibm_cloud_iam/models/update_preference_request.rb
 lib/ibm_cloud_iam/models/update_service_id_group_request.rb
 lib/ibm_cloud_iam/models/update_service_id_request.rb
@@ -368,6 +380,7 @@ spec/models/create_idp_request_properties_idp_spec.rb
 spec/models/create_idp_request_properties_sp_authn_context_spec.rb
 spec/models/create_idp_request_properties_sp_spec.rb
 spec/models/create_idp_request_properties_spec.rb
+spec/models/create_idp_request_secrets_idp_encrypting_inner_spec.rb
 spec/models/create_idp_request_secrets_idp_signing_inner_spec.rb
 spec/models/create_idp_request_secrets_idp_spec.rb
 spec/models/create_idp_request_secrets_sp_signing_inner_spec.rb
@@ -392,6 +405,8 @@ spec/models/identity_limits_usage_request_spec.rb
 spec/models/identity_limits_usage_response_apikeys_per_identity_spec.rb
 spec/models/identity_limits_usage_response_claim_rules_per_group_spec.rb
 spec/models/identity_limits_usage_response_claim_rules_per_profile_spec.rb
+spec/models/identity_limits_usage_response_cr_links_per_profile_spec.rb
+spec/models/identity_limits_usage_response_cr_rules_per_profile_spec.rb
 spec/models/identity_limits_usage_response_serviceids_per_group_spec.rb
 spec/models/identity_limits_usage_response_spec.rb
 spec/models/identity_limits_usage_response_template_versions_per_template_spec.rb
@@ -455,8 +470,11 @@ spec/models/update_account_idp_setting_request_spec.rb
 spec/models/update_account_login_settings_spec.rb
 spec/models/update_api_key_request_spec.rb
 spec/models/update_id_p_request_properties_idp_spec.rb
+spec/models/update_id_p_request_properties_sp_authn_context_spec.rb
+spec/models/update_id_p_request_properties_sp_spec.rb
 spec/models/update_id_p_request_properties_spec.rb
 spec/models/update_id_p_request_secrets_idp_spec.rb
+spec/models/update_id_p_request_secrets_sp_spec.rb
 spec/models/update_id_p_request_secrets_spec.rb
 spec/models/update_id_p_request_spec.rb
 spec/models/update_preference_request_spec.rb
